@@ -1,0 +1,282 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    font-family: "Courier Prime", "Courier New", monospace;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        top: -24px;
+    }
+}
+
+.content ul {
+    list-style: none;
+}
+
+.header {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.section {
+    position: relative;
+    width: 90%;
+    margin: auto auto;
+    color: rgb(205, 172, 25);
+    background-color: rgba(62, 70, 55, 0.55);
+    padding: 10px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    border: 1px solid rgb(100, 100, 100);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 35px;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+}
+
+.section h1 {
+    margin-bottom: 35px;
+    color: rgb(250, 250, 250);
+}
+
+@media screen and (max-width: 768px) {
+    .section h1 {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+}
+
+.section h2 {
+    color: rgb(250, 250, 250);
+}
+
+.section strong {
+    color: rgb(205, 172, 25);
+    font-weight: bold;
+}
+
+.section li {
+    font-weight: bold;
+}
+
+.section iframe {
+    width: 80%;
+    height: 453px;
+}
+
+@media screen and (max-width: 768px) {
+    .section iframe {
+        width: 80%;
+        height: 136px;
+    }
+}
+
+.servers {
+    position: relative;
+}
+
+.server-list {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.server-list a {
+    color: unset;
+    text-decoration: none;
+}
+
+.server-list a:hover {
+    color: unset;
+    text-decoration: none;
+}
+
+.server-item {
+    position: relative;
+    display: inline-block;
+    width: 382px;
+    height: 230px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 450px) {
+    .server-item {
+        width: 93%;
+    }
+}
+
+.server-item:hover {
+    box-shadow: 0 0px 10px 0 rgb(230, 222, 76);
+}
+
+.server-item-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #74ff70;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom-left-radius: 10px;
+    border: 1px solid #0c5d0e;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    font-size: 0.8em;
+}
+
+.server-item-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.server-item-info-name {
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+.server-item-info-topic {
+    font-size: 0.8em;
+}
+
+.features {
+    position: relative;
+    width: 100%;
+}
+
+.features-box {
+    position: relative;
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .features-box {
+        width: 100%;
+    }
+
+    .features-box li {
+        font-size: 0.9em;
+    }
+}
+
+.button-big {
+    position: relative;
+    width: 100%;
+}
+
+.button-big a {
+    display: block;
+    width: 100%;
+    background-color: #77be5d;
+    color: white;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 10px;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button-big a:hover {
+    background-color: #7fcf62;
+    text-decoration: none;
+}
+
+.download {
+    position: relative;
+    display: inline-block;
+}
+
+.download a {
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .download a {
+        margin-bottom: 10px;
+    }
+}
+
+a.is-highlight-link {
+    color: rgb(205, 172, 25);
+    text-decoration: none;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    a.is-highlight-link {
+        font-size: 1.2em;
+    }
+}
+
+a.is-highlight-link:hover {
+    color: rgb(205, 172, 25);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.icons {
+    position: relative;
+}
+
+.icons a {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.icons i {
+    color: rgb(200, 153, 10);
+}
+
+@media screen and (max-width: 768px) {
+    .icons a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .icons i {
+        margin-bottom: 20px;
+    }
+
+    .icons i.fa-2x {
+        font-size: 1.5em;
+    }
+}

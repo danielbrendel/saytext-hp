@@ -1,0 +1,13 @@
+require "fileio";
+
+global szScriptPath string;
+global bConfigExists bool;
+
+getscriptpath szScriptPath;
+
+fexists "%szScriptPath/src/config.php" bConfigExists;
+if (%bConfigExists, -eq, false) {
+    fcopy "%szScriptPath/src/config.php.example" "%szScriptPath/src/config.php" void;
+};
+
+sys {php -S localhost:8000 -t public/};
